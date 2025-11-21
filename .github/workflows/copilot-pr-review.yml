@@ -1,0 +1,36 @@
+name: AI Pull Request Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  copilot-review:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Copilot Review
+        id: review
+        uses: github/copilot-review-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          target: pr
+
+      - name: Post AI Review Comments
+        if: ${{ steps.review.outputs.comments != '' }}
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: "🤖 Copilot Review"
+          message: ${{ steps.review.outputs.comments }}
+
+      - name: Write Summary
+        run: |
+          echo "## Copilot Review Summary" >> $GITHUB_STEP_SUMMARY
+          echo "${{ steps.review.outputs.comments }}" >> $GITHUB_STEP_SUMMARY

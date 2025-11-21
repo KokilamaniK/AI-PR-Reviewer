@@ -487,11 +487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\004IYF744\\Documents\\Learning\\AI-PR-Reviewer\\AI-PR-Reviewer\\DemoApi\\DemoApi.csproj",
+      "projectUniqueName": "C:\\Users\\004IYF744\\Documents\\Learning\\AI-PR-Reviewer\\AI-PR-Reviewer\\DemoApi.csproj",
       "projectName": "DemoApi",
-      "projectPath": "C:\\Users\\004IYF744\\Documents\\Learning\\AI-PR-Reviewer\\AI-PR-Reviewer\\DemoApi\\DemoApi.csproj",
+      "projectPath": "C:\\Users\\004IYF744\\Documents\\Learning\\AI-PR-Reviewer\\AI-PR-Reviewer\\DemoApi.csproj",
       "packagesPath": "C:\\Users\\004IYF744\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\004IYF744\\Documents\\Learning\\AI-PR-Reviewer\\AI-PR-Reviewer\\DemoApi\\obj\\",
+      "outputPath": "C:\\Users\\004IYF744\\Documents\\Learning\\AI-PR-Reviewer\\AI-PR-Reviewer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\004IYF744\\AppData\\Roaming\\NuGet\\NuGet.Config"
